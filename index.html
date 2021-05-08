@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAV Inversiones | Liz Flores Reyes</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <div class="box container">
+        <header class="header">
+            <div class="header__imagen">
+                <picture>
+                    <source loading="lazy" srcset="img/cilube.webp" type="image/webp">
+                    <img loading="lazy" src="img/cilube.jpg" alt="logo cilube">
+                </picture>
+                <picture>
+                    <source loading="lazy" srcset="img/logo-america.webp" type="image/webp">
+                    <img loading="lazy" src="img/logo-america.jpg" alt="logo american">
+                </picture>
+            </div>
+            <div class="header__texto">
+                <h1 class="no-margen">Liz Flores Reyes</h1>
+                <p class="no-margen">Jefe de Ventas</p>
+            </div>
+        </header>
+        <div class="logo">
+            <picture>
+                <source loading="lazy" srcset="img/lav.webp" type="image/webp">
+                <img loading="lazy" src="img/lav.jpg" alt="LAV">
+            </picture>
+            <div class="contenido">
+                <p class="contenido__item"><img src="img/mobile.png" alt=""><span class="contenido__descricpion"><a href="tel:+51956749164">+51 956 749 164</a></span></p>
+                <p class="contenido__item"><img src="img/gmail.png" alt=""><span class="contenido__descricpion"><a href="mailto:lavamericanlubricants@gmail.com">lavamericanlubricants</a></span></p>
+                <p class="contenido__item"><img src="img/web.png" alt=""><span class="contenido__descricpion"><a href="http://lavlubricants.netlify.app/">http://lavlubricants.netlify.app/</a></span></p>
+                <p class="contenido__item"><img src="img/ubicacion.png" alt=""><span class="contenido__descricpion"><a href="#">Mz.E Lt.03 Urb. El Manantial</a></span></p>
+            </div>
+        </div>
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d975.6940500643751!2d-77.08484847088586!3d-11.989981887621585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105ce66625e21f5%3A0x1636ddc33a168bb6!2sJos%C3%A9%20Carlos%20Mariategui%2C%20San%20Mart%C3%ADn%20de%20Porres%2015109!5e0!3m2!1ses-419!2spe!4v1620439105707!5m2!1ses-419!2spe" style="border:0"; width="100%" height="auto" loading="lazy"></iframe>
+        </div>
+        <section>
+            <h2>Contáctame</h2>
+        </section>
+        <div class="formulario">
+            <form class="form" name="contact" method="POST" data-netlify="true" action="/pag">
+                <div class="form-caja">
+                    <fieldset>
+                        <legend>Ingrese sus datos:</legend>
+                    <div class="contenedor-campos">
+                        <div class="campo">
+                            <label>Nombres</label>
+                            <input class="input-text" type="text" name="name" placeholder="Nombres" required>
+                        </div>
+    
+                        <div class="campo">
+                            <label>Apellidos</label>
+                            <input class="input-text" type="text" name="surname" placeholder="Apellidos" required>
+                        </div>
+    
+                        <div class="campo">
+                            <label>Dirección</label>
+                            <input class="input-text" type="text" name="direction" placeholder="Dirección" required>
+                        </div>
+    
+                        <div class="campo">
+                            <label>Empresa</label>
+                            <input class="input-text" type="text" name="company" placeholder="Nombre de Empresa" required>
+                        </div>
+    
+                        <div class="campo">
+                            <label>RUC</label>
+                            <input class="input-text" type="tel" name="ruc" placeholder="RUC" required>
+                        </div>
+    
+                        <div class="campo">
+                            <label>Celular</label>
+                            <input class="input-text" type="tel" name="phone" placeholder="Celular" required>
+                        </div>
+                        
+                        <div class="campo">
+                            <label>Email</label>
+                            <input class="input-text" type="email" name="email" placeholder="email" required>
+                        </div>
+        
+                        <div class="campo">
+                            <label>Mensaje</label>
+                            <textarea class="input-text" name="message" required></textarea>
+                        </div>
+                    </div><!--.contenedor-campos-->
+    
+                    <div class="alinear-derecha flex">
+                        <input class="boton btn w-sm-100" type="submit" value="Enviar">
+                    </div>
+                </fieldset>
+            </div>    
+            </form>
+        </div>    
+    </div>
+    
+    
+</body>
+</html>

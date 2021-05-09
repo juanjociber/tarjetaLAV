@@ -278,16 +278,6 @@ h2{
 fieldset{
     border: none;
 }
-fieldset legend{
-
-    /* display: block;
-    width: 100%;
-    text-align: center; */
-    /* margin-bottom: 2rem;
-    padding-top: 1rem;
-    
-     */
-} 
 .campo label {
     display: block;
     font-weight: 600;

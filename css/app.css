@@ -393,7 +393,7 @@ input[type="submit"]{
     width: 100%;
     text-align: center;
     font-size: 2.2rem;
-    font-family: var(--letraBanner);
+    /* font-family: var(--letraBanner); */
     font-weight: 700;
     color: var(--blanco);
     text-shadow: var(--amarilloOscuro) 0 2px 5px;
@@ -406,7 +406,7 @@ input[type="submit"]{
     right: 0;
     width: 0;
     background-color:#3f3e3e;
-    border-left: 3px solid #a19d9d;
+    border-left: 1px solid #a19d9d;
     animation: maquina 5s infinite alternate steps(17);
     
 }

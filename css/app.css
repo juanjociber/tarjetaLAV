@@ -393,11 +393,12 @@ input[type="submit"]{
     width: 100%;
     text-align: center;
     font-size: 2.2rem;
-    /* font-family: var(--letraBanner); */
+    font-family: var(--letraBanner);
     font-weight: 700;
     color: var(--blanco);
     text-shadow: var(--amarilloOscuro) 0 2px 5px;
     position: relative;
+    padding-top: 1rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }

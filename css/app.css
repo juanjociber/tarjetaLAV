@@ -393,7 +393,6 @@ input[type="submit"]{
     width: 100%;
     text-align: center;
     font-size: 2.2rem;
-    font-family: var(--letraBanner);
     font-weight: 700;
     color: var(--blanco);
     text-shadow: var(--amarilloOscuro) 0 2px 5px;
@@ -413,9 +412,9 @@ input[type="submit"]{
 }
 @keyframes maquina{
     from{
-        width: 73%;
+        width: 76%;
     }
     to{
-        width: 26%;
+        width: 23%;
     }
 }

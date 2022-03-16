@@ -52,6 +52,11 @@ img{
 h1{
     font-size: 6vw;
 }
+@media(min-width:768px){
+    h1{
+        color: #0911FA;
+    }
+}
 h2{
     color: #0911FA;
     font-weight: 800;

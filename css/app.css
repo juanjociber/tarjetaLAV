@@ -53,7 +53,8 @@ h1{
     font-size: 6vw;
 }
 h2{
-    color: var(--azul);
+    color: #0911FA;
+    font-weight: 800;
     padding-top: 1rem;
     padding-bottom: 1rem;
     text-align: center;
@@ -62,16 +63,29 @@ h2{
 .header__texto{
     text-align: center;
     border: 1px solid #d3d1d1;
-    background-color: var(--azul);
-    border-radius: 0.5rem;
+    background: #0911FA;
+    border-radius: 0.3rem;
     color: var(--blancohumo);
-    margin: 0.5rem 1rem;
+    margin: 1.5rem 1rem;
     padding: 1rem 0;
     text-shadow: var(--negro) 0 2px 4px;
+    -webkit-box-shadow: 0px 10px 13px -7px #232323, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 0px 10px 13px -7px #202020, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+@media(min-width:768px){
+    .header__texto{
+        box-shadow: unset;
+    }
 }
 .header__texto p{
     color:#dbdada;
     font-size: 5vw;
+}
+.header__imagen{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 4rem;
+    margin-top: 2rem;
 }
 
 .logo{
@@ -80,32 +94,32 @@ h2{
 .logo img{
     width: 50%;
 }
+@media(min-width:768px){
+    .logo img{
+        width: auto;
+    }
+}
 .logo__america{
     background-color: white;
+    border-radius: 6px;
 }
-.contenido__item{
+.logo__cilube{
+    border-radius: 6px;
+}
+
+.contenido p{
     display: flex;
-    align-items: center;
-    border: 1px solid #5c1a0f36;
-    margin: 0.5rem;
+    align-items: center;    
 }
-.contenido__item:hover{
-    background-color: #eeebeb;
-}
-.contenido img{
-    width: 12%;
+.contenido p i{
     margin-right: 1rem;
-    filter: grayscale(0.9);
-    padding: 0.5rem;
+    margin-left: 1rem;
+    font-size: 2rem;
+    color: #0911FA;
 }
-.contenido a{
-    color: #805757;
-    font-size: 4vw;
-}
-.mapa{
-    border: 1px solid #d1d1d1;
-    border-radius: 0.5rem;
-    margin-top: 1rem;
+.contenido p a{
+    color: #0911FA;
+    font-weight: 300;
 }
 @media(min-width:768px){
     .box{
@@ -256,7 +270,7 @@ h2{
 /*====== Formulario =====*/
 .formulario{
     position: relative;
-    height:67rem;
+    height:70rem;
     background-image: url(../img/slider02.jpg);
     background-repeat: no-repeat;
     background-position: center bottom;
@@ -278,34 +292,36 @@ fieldset{
 }
 .campo label {
     display: block;
-    font-weight: 600;
+    font-weight: 400;
     color: var(--blancohumo);
+    text-transform: uppercase;
     margin-bottom: 0.5rem;
+    letter-spacing: 0.1rem ;
 }
 .campo textarea{
     height: 8rem;
 }
 .input-text{
     width: 100%;
-    padding: 0.6rem;
-    border: 1px solid var(--grisoscuro);
+    padding: 0.8rem 0.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.442);
     border-radius: 0.5rem;
     margin-bottom: .5rem;
     outline: none;
     border-style: solid;
-    border: 1px solid #DBDBDB1A;
-    background-color:#DBDBDB1A;
-    
+    /* background-color:#DBDBDB1A; */
+    background: rgb(57, 57, 57);
     /* text-overflow: ellipsis; */
     color: var(--blanco);
 }
 ::placeholder{
-    color: var(--blanco);
-    font-size: 1.3rem;
+    font-weight: 300;
 }
 .input-text:hover{
-    border: 1px solid #e9e5e54b;
-    background-color: #e9e5e54b;
+    /* border: 1px solid #e9e5e54b; */
+    box-shadow: 0 0 5px rgb(157, 213, 233);
+    background: rgba(255, 255, 255, 0.932);
+    color: #3b3b3b;
 }
 input[type="submit"]{
     outline: none;
@@ -315,15 +331,17 @@ input[type="submit"]{
     margin-top: 1.5rem;
     width: 100%;
     border: none;
-    border-radius: 1rem;
+    border-radius: 0.3rem;
     font-size: 1.5rem;
     background-color: #ff4040;
     text-transform: uppercase;
     padding: 1.7rem !important;
     transition: background-color ease .7s;
     font-family: var(--letraPrincipal);
-    font-weight: 300;
+    font-weight: 500;
     color: var(--blancohumo);
+    letter-spacing: 0.3rem;
+    box-shadow: inset -8px -5px 11px -5px rgb(0 0 0 / 61%);
 }
 .btn:hover{
     background-color: #ff404052 !important;
@@ -334,7 +352,7 @@ input[type="submit"]{
 
 @media(min-width:768px){
     .formulario{
-        height:45rem;            
+        height:50rem;            
     }
     .contenedor-campos{
         display: grid;
@@ -344,6 +362,9 @@ input[type="submit"]{
     }
     .campo label{
         display: block;
+    }
+    .campo--mod{
+        grid-column: 1 / 3;
     }
     .boton{
         text-align: center;
@@ -359,7 +380,7 @@ input[type="submit"]{
 .footer{
     display: flex;
     padding: 0.5rem;
-    background-color: #00509fe1;
+    background-color: #0911FA;
     margin-top: 0.5rem;
 }
 .copyrigth{
@@ -416,3 +437,9 @@ input[type="submit"]{
         width: 20%;
     }
 }
+
+.byDeveloper{
+    font-weight: 300;
+}
+
+
